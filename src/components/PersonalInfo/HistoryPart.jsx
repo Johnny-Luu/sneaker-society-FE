@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import style from "./HistoryPart.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { selectCartList } from "../../features/cartSlice";
-import { selectCustomer } from "../../features/customerSlice";
+import { selectCartList } from "../../redux/cartSlice";
+import { selectCustomer } from "../../redux/customerSlice";
 import { getHistory } from "../../api/cartAPI";
 import HistorySection from "./HistorySection";
 

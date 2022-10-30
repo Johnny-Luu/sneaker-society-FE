@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import {
   addTagFilter,
   deleteTagFilter,
-} from "../../features/productArrangeSlice";
+} from "../../redux/productArrangeSlice";
 
 function TagGrid() {
   const [isClicked, setTagClickState] = useState(false);

@@ -3,8 +3,8 @@ import style from "./MainPartInfo.module.css";
 // import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useSelector, useDispatch } from "react-redux";
-import { selectCustomer } from "../../features/customerSlice";
-import { update } from "../../features/customerSlice";
+import { selectCustomer } from "../../redux/customerSlice";
+import { update } from "../../redux/customerSlice";
 import { updateCustomerAccount } from "../../api/customerAPI";
 import ToastMessage from "../ToastMessage/ToastMessage";
 

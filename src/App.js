@@ -14,7 +14,7 @@ import Footer from "./components/Footer/footer";
 import AccountInfoPage from "./pages/AccountInfoPage";
 import HistoryInfoPage from "./pages/HistoryInfoPage";
 import { useSelector } from "react-redux";
-import { selectCustomer } from "./features/customerSlice";
+import { selectCustomer } from "./redux/customerSlice";
 import React from "react";
 import { ToastContainer, Bounce } from "react-toastify";
 

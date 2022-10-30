@@ -4,7 +4,7 @@ import BackgroundWithPath from "../components/Products/BackgroundWithPath";
 import ProductsMainPart from "../components/Products/ProductsMainPart";
 import FloatingFilter from "../components/Products/FloatingFilter";
 import SideBar from "../components/Products/SideBar";
-import { resetFilter } from "../features/productArrangeSlice";
+import { resetFilter } from "../redux/productArrangeSlice";
 import { useDispatch } from "react-redux";
 
 const ProductPage = (props) => {

@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import {
   addSizeFilter,
   deleteSizeFilter,
-} from "../../features/productArrangeSlice";
+} from "../../redux/productArrangeSlice";
 
 function SizeGrid() {
   const dispatch = useDispatch();

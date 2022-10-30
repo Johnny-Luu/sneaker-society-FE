@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { selectCustomer } from "../../features/customerSlice";
+import { selectCustomer } from "../../redux/customerSlice";
 import style from "./CartTable.module.css";
 import sneaker from "../../assets/images/ColoredSneaker.png"; //temp image
 import { getCurrent } from "../../api/cartAPI";

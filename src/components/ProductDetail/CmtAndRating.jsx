@@ -1,7 +1,7 @@
 import style from './CmtAndRating.module.css'
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { selectCustomer } from '../../features/customerSlice'
+import { selectCustomer } from '../../redux/customerSlice'
 import CommentItem from './CommentItem';
 import Nike1 from '../../assets/images/sneaker-transparent/nike-1.png'
 import ReactStars from "react-rating-stars-component";

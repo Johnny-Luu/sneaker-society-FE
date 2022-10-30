@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
-import { selectCustomer } from "../../features/customerSlice";
+import { selectCustomer } from "../../redux/customerSlice";
 import styleCartTable from "./CartTable.module.css";
 import sneaker from "../../assets/images/ColoredSneaker.png"; //temp image
 import {
@@ -27,7 +27,7 @@ import {
   addCartItemToRedux,
   removeCartItemFromRedux,
   clearCartList,
-} from "../../features/cartSlice";
+} from "../../redux/cartSlice";
 import ToastMessage from "../ToastMessage/ToastMessage";
 import Checkout from "../Checkout/Checkout";
 import { updateQuantity } from "../../api/cartAPI";

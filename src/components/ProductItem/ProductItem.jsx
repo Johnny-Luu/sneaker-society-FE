@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import style from "./ProductItem.module.css";
 import Nike1 from "../../assets/images/sneaker-transparent/jordan-1.png"; //temp image
-import { selectCustomer } from "../../features/customerSlice";
-import { selectCartList, addCartItemToRedux } from "../../features/cartSlice";
+import { selectCustomer } from "../../redux/customerSlice";
+import { selectCartList, addCartItemToRedux } from "../../redux/cartSlice";
 import { createCart, addToCart, getCurrent } from "../../api/cartAPI";
 import ToastMessage from "../ToastMessage/ToastMessage";
 import ProductModal from "../ProductModal/ProductModal";
@@ -20,7 +20,7 @@ import {
   selectFavouriteList,
   addFavouriteToRedux,
   removeFavouriteFromRedux,
-} from "../../features/favouriteSlice";
+} from "../../redux/favouriteSlice";
 
 function ProductItem({ data, marginRight }) {
   const customer = useSelector(selectCustomer); //get current logged in customer

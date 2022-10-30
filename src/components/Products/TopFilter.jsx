@@ -3,7 +3,7 @@ import Style from "./TopFilter.module.css";
 import {
   deleteSortingFilter,
   addSortingFilter,
-} from "../../features/productArrangeSlice";
+} from "../../redux/productArrangeSlice";
 import { useDispatch } from "react-redux";
 import Data from "./SideBarData";
 

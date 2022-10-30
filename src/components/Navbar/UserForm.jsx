@@ -11,9 +11,9 @@ import {
 } from "../../api/customerAPI";
 import { getCurrent } from "../../api/cartAPI";
 import { getFavourites } from "../../api/favouriteAPI";
-import { login } from "../../features/customerSlice";
-import { initFavouriteList } from "../../features/favouriteSlice";
-import { initCartList } from "../../features/cartSlice";
+import { login } from "../../redux/customerSlice";
+import { initFavouriteList } from "../../redux/favouriteSlice";
+import { initCartList } from "../../redux/cartSlice";
 import ToastMessage from "../ToastMessage/ToastMessage";
 import { createFavouriteList } from "../../api/favouriteAPI";
 

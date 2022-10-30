@@ -11,7 +11,7 @@ import {
   resetFilter,
   deleteNavFindFilter,
   addBrandFilter,
-} from "../../features/productArrangeSlice";
+} from "../../redux/productArrangeSlice";
 
 function ProductsMainPart(props) {
   //get filter global state from redux

@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import { OneProduct } from './ProductData'        //temp imgs
 import style from './DetailInfo.module.css'
 import { getOneProduct } from '../../api/productAPI'
-import { selectCustomer } from '../../features/customerSlice'
+import { selectCustomer } from '../../redux/customerSlice'
 import ToastMessage from "../ToastMessage/ToastMessage";
-import { selectCartList, addCartItemToRedux } from "../../features/cartSlice";
+import { selectCartList, addCartItemToRedux } from "../../redux/cartSlice";
 
 import { 
      createCart, 
@@ -24,7 +24,7 @@ import {
      selectFavouriteList,
      addFavouriteToRedux,
      removeFavouriteFromRedux,
-} from "../../features/favouriteSlice";
+} from "../../redux/favouriteSlice";
 
 function DetailInfo({ id }) {
 
