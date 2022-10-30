@@ -1,7 +1,7 @@
 import React from "react";
 import backgroundImageTop from "../assets/images/productDetail/detail-product-bg.jpg";
 import { Link } from "react-router-dom";
-import style from "../pageStyle/AboutUsPage.module.css";
+import style from "../styles/AboutUsPage.module.css";
 import ServiceSection from "../components/ServiceSection/ServiceSection";
 import backgroundImage from "../assets/images/contactus2.jpg";
 import BackgroundWithPath from "../components/Products/BackgroundWithPath";

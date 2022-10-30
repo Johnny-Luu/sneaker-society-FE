@@ -8,7 +8,7 @@ import SneakerFirst from "../assets/images/banner/sneaker-homepage-1.jpg";
 import SneakerSecond from "../assets/images/banner/sneaker-homepage-2.jpg";
 import OurBlog from "../components/OurBlog/OurBlog";
 import ServiceSection from "../components/ServiceSection/ServiceSection";
-import Style from "../pageStyle/HomePage.module.css";
+import Style from "../styles/HomePage.module.css";
 
 const HomePage = () => {
   return (

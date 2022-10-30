@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import Style from "../pageStyle/ErrorPage.module.css"
+import Style from "../styles/ErrorPage.module.css"
 
 function Page404() {
     return (
