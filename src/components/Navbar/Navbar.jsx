@@ -14,10 +14,10 @@ import {
   resetFilter,
   addBrandFilter,
   deleteBrandFilter,
-} from "../../redux/productArrangeSlice";
+} from "../../redux/product-arrange-slice";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { selectCustomer } from "../../redux/customerSlice";
+import { selectCustomer } from "../../redux/customer-slice";
 
 Modal.setAppElement("#root");
 

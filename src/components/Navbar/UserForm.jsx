@@ -8,14 +8,14 @@ import {
   getCustomerLogin,
   getCustomerByEmail,
   createCustomerAccount,
-} from "../../api/customerAPI";
-import { getCurrent } from "../../api/cartAPI";
-import { getFavourites } from "../../api/favouriteAPI";
-import { login } from "../../redux/customerSlice";
-import { initFavouriteList } from "../../redux/favouriteSlice";
-import { initCartList } from "../../redux/cartSlice";
+} from "../../api/customer-api";
+import { getCurrent } from "../../api/cart-api";
+import { getFavourites } from "../../api/favourite-api";
+import { login } from "../../redux/customer-slice";
+import { initFavouriteList } from "../../redux/favourite-slice";
+import { initCartList } from "../../redux/cart-slice";
 import ToastMessage from "../ToastMessage/ToastMessage";
-import { createFavouriteList } from "../../api/favouriteAPI";
+import { createFavouriteList } from "../../api/favourite-api";
 
 function UserForm({ handleOpen }) {
   const [loginDisplay, setLoginDisplay] = useState("block");

@@ -4,14 +4,14 @@ import SideBar from "./SideBar";
 import ProductItem from "../ProductItem/ProductItem";
 import TopFilter from "./TopFilter";
 import Pagination from "./Pagination";
-import { getAllProduct } from "../../api/paginationProductAPI";
+import { getAllProduct } from "../../api/paginationProduct-api";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import {
   resetFilter,
   deleteNavFindFilter,
   addBrandFilter,
-} from "../../redux/productArrangeSlice";
+} from "../../redux/product-arrange-slice";
 
 function ProductsMainPart(props) {
   //get filter global state from redux

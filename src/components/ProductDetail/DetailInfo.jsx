@@ -2,25 +2,25 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { OneProduct } from "./ProductData"; //temp imgs
 import style from "./DetailInfo.module.css";
-import { getOneProduct } from "../../api/productAPI";
-import { selectCustomer } from "../../redux/customerSlice";
+import { getOneProduct } from "../../api/product-api";
+import { selectCustomer } from "../../redux/customer-slice";
 import ToastMessage from "../ToastMessage/ToastMessage";
-import { selectCartList, addCartItemToRedux } from "../../redux/cartSlice";
+import { selectCartList, addCartItemToRedux } from "../../redux/cart-slice";
 
-import { createCart, addToCart, getCurrent } from "../../api/cartAPI";
+import { createCart, addToCart, getCurrent } from "../../api/cart-api";
 
 import {
   getFavourites,
   createFavouriteList,
   addFavourite,
   removeFavourite,
-} from "../../api/favouriteAPI";
+} from "../../api/favourite-api";
 
 import {
   selectFavouriteList,
   addFavouriteToRedux,
   removeFavouriteFromRedux,
-} from "../../redux/favouriteSlice";
+} from "../../redux/favourite-slice";
 
 function DetailInfo({ id }) {
   const customer = useSelector(selectCustomer); //get current logged in customer

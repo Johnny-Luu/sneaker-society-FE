@@ -6,7 +6,7 @@ import {
   deleteBrandFilter,
   addPriceFilter,
   deletePriceFilter,
-} from "../../redux/productArrangeSlice";
+} from "../../redux/product-arrange-slice";
 import { useSelector } from "react-redux";
 
 //pass listChild as an array

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import style from "./SuggestProducts.module.css";
 import ProductItem from "../ProductItem/ProductItem";
-import { getAllProduct } from "../../api/paginationProductAPI";
-import { getOneProduct } from "../../api/productAPI";
+import { getAllProduct } from "../../api/paginationProduct-api";
+import { getOneProduct } from "../../api/product-api";
 
 function SuggestProducts({ id }) {
   const [productList, setProductList] = React.useState([]);

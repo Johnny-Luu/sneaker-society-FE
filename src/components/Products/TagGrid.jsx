@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import Style from "./TagGrid.module.css";
 import SideBarData from "./SideBarData";
 import { useDispatch } from "react-redux";
-import { addTagFilter, deleteTagFilter } from "../../redux/productArrangeSlice";
+import {
+  addTagFilter,
+  deleteTagFilter,
+} from "../../redux/product-arrange-slice";
 
 function TagGrid() {
   const [isClicked, setTagClickState] = useState(false);

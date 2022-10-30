@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
-import { selectCustomer } from "../../redux/customerSlice";
+import { selectCustomer } from "../../redux/customer-slice";
 import styleCartTable from "./CartTable.module.css";
 import sneaker from "../../assets/images/ColoredSneaker.png"; //temp image
 import {
@@ -10,7 +10,7 @@ import {
   checkout,
   createCart,
   addToCart,
-} from "../../api/cartAPI";
+} from "../../api/cart-api";
 import { Link } from "react-router-dom";
 
 import styleCartTotal from "./CartTotal.module.css";
@@ -27,10 +27,10 @@ import {
   addCartItemToRedux,
   removeCartItemFromRedux,
   clearCartList,
-} from "../../redux/cartSlice";
+} from "../../redux/cart-slice";
 import ToastMessage from "../ToastMessage/ToastMessage";
 import Checkout from "../Checkout/Checkout";
-import { updateQuantity } from "../../api/cartAPI";
+import { updateQuantity } from "../../api/cart-api";
 
 const CartSection = () => {
   //CartTable

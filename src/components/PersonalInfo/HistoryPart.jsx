@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import style from "./HistoryPart.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { selectCartList } from "../../redux/cartSlice";
-import { selectCustomer } from "../../redux/customerSlice";
-import { getHistory } from "../../api/cartAPI";
+import { selectCartList } from "../../redux/cart-slice";
+import { selectCustomer } from "../../redux/customer-slice";
+import { getHistory } from "../../api/cart-api";
 import HistorySection from "./HistorySection";
 
 function HistoryPart() {

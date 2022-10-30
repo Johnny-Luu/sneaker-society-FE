@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { selectCustomer } from "../../redux/customerSlice";
+import { selectCustomer } from "../../redux/customer-slice";
 import style from "./CartTable.module.css";
 import sneaker from "../../assets/images/ColoredSneaker.png"; //temp image
-import { getCurrent } from "../../api/cartAPI";
+import { getCurrent } from "../../api/cart-api";
 
 // THIS IS NOT SUPPOSED TO BE USED !!
 ///////////////////////////////////////

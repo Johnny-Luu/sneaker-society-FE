@@ -3,7 +3,7 @@ import empty from "../../assets/images/empty.jpg";
 import style from "./ModalAccount.module.css";
 import { useHistory } from "react-router";
 import { useDispatch } from "react-redux";
-import { logout } from "../../redux/customerSlice";
+import { logout } from "../../redux/customer-slice";
 import ToastMessage from "../ToastMessage/ToastMessage";
 
 function ModalAccount() {

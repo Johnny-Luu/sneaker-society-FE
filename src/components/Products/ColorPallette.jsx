@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import {
   addColorFilter,
   deleteColorFilter,
-} from "../../redux/productArrangeSlice";
+} from "../../redux/product-arrange-slice";
 
 function ColorPallette() {
   const dispatch = useDispatch();
