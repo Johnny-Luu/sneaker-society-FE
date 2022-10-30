@@ -1,0 +1,96 @@
+.titleInfo {
+    font-size: 2rem;
+    font-weight: 700;
+
+    padding: 2rem 2rem;
+    padding-bottom: 2.0rem;
+    text-align: center;
+}
+
+.divSectionCal {
+    display: flex;
+    flex-direction: column;
+
+
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    background-color: #F4F4FC;
+}
+
+.divInput {
+    display: flex;
+    flex-direction: column;
+}
+.divInput input {
+    width: 100%;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #C7CEE4;
+
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    box-sizing: border-box;
+    height: 40px;
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-bottom: 25px;
+}
+.divInput input:focus {
+    outline: none;
+}
+
+
+
+/* .divCalculate {
+    display: flex;
+    flex-direction: column;
+}
+.divCalculate a {
+    text-align: center;
+
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    background: #222;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-top: 1rem;
+    border-radius: 5px;
+
+    position: relative;
+    transition: .3s;
+}
+.divCalculate a:hover {
+    background: #c50215;
+}
+
+.divTotalShip {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1D3178;
+
+    margin-bottom: 10px;
+}
+.divTotalShip p:first-child {
+    color: #15245E;
+} */

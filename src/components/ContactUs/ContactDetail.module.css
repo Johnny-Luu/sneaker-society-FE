@@ -1,0 +1,37 @@
+.sectionContact {
+  width: 100%;
+}
+
+.sectionContact p:first-child {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.divInfo div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+.divInfo img {
+  margin-right: 15px;
+}
+.divInfo p {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+@media (max-width: 450px) {
+  .sectionContact p:first-child {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  .divInfo p {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}

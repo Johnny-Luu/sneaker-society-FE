@@ -1,0 +1,189 @@
+.card {
+  width: 270px;
+  height: 350px;
+  margin: 50px 6px;
+  border-radius: 20px;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  padding-bottom: 30px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #f6f6f6;
+  transform: scale(1.2);
+}
+
+.card:hover .imgBox {
+  transform: translateY(-40px);
+}
+
+.card:hover .btn {
+  transform: scale(1);
+}
+
+.card:hover .imgBox img {
+  transform: translateX(20px) rotate(30deg) scale(1.2);
+}
+
+.imgBox {
+  width: 90%;
+  height: 210px;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.imgBox img {
+  max-width: 100%;
+  object-fit: contain;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  z-index: 2;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: white;
+  margin: 0 8px;
+  transform: scale(0);
+}
+
+.btn1 {
+  transition: width 0.3s, transform 0.3s ease, opacity 0.3s ease,
+    visibility 0.3s ease, color 0.3s linear, background 0.3s linear;
+}
+
+.btn2 {
+  transition: width 0.3s, transform 0.3s ease 0.1s, opacity 0.3s ease 0.1s,
+    visibility 0.3s ease 0.1s, color 0.3s linear, background 0.3s linear;
+}
+
+.btn3 {
+  transition: width 0.3s, transform 0.3s ease 0.2s, opacity 0.3s ease 0.2s,
+    visibility 0.3s ease 0.2s, color 0.3s linear, background 0.3s linear;
+}
+
+.btn:hover {
+  width: 80px;
+  background: #c50215;
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+  /* transform: translateY(-20px); */
+}
+
+.name {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: #333;
+}
+
+.rating {
+  margin: 4px 0;
+}
+
+.rating i {
+  margin: 0 1px;
+  color: #ffab04;
+}
+
+.sizeContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #333;
+  margin-top: 8px;
+}
+
+.sizeItem {
+  margin-right: 6px;
+}
+
+.sizeItem:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.sizeChoose {
+  color: red;
+}
+
+.shortDesc {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  padding: 0 12px;
+  color: #333;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 450;
+  line-height: 3rem;
+  margin-top: 8px;
+  color: red;
+}
+
+/* responsive */
+/* tablet */
+@media (max-width: 1100px) {
+  .card {
+    width: 35%;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 740px) and (min-width: 700px) {
+  .card {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 699px) and (min-width: 575px) {
+  .card {
+    width: 80%;
+    height: 420px;
+  }
+}
+
+@media (max-width: 574px) and (min-width: 465px) {
+  .card {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 740px) {
+  .card {
+    width: 80%;
+  }
+}

@@ -1,0 +1,76 @@
+.h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 18px;
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.rightAlign {
+  text-align: right;
+}
+td {
+  padding: 10px;
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  background: #222;
+  font-weight: medium;
+  color: #fff;
+  padding: 10px 50px 15px 50px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition: 0.3s;
+  animation: small-to-big 1s ease-in-out;
+}
+.button:hover {
+  background: #c50215;
+}
+.w3-radio {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+}
+input {
+  padding: 6px;
+  font-size: 16px;
+}
+.inputBox {
+  width: 100%;
+}
+.date {
+  width: 95%;
+  text-align: center;
+}
+.date:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: relative;
+    width: 100%;
+    align-self: center;
+
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}

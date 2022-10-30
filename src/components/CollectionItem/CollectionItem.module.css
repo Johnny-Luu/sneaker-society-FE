@@ -1,0 +1,178 @@
+.reverseLayout {
+     flex-direction: row-reverse;
+}
+
+.collectionContainer {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.itemSneaker {
+     width: 30%;
+     text-align: center;
+     overflow: hidden;
+}
+
+.itemSneaker:hover .itemImgSneaker {
+     transform: scale(1.05);
+}
+
+.itemBanner {
+     width: 70%;
+     position: relative;
+     overflow: hidden;
+}
+
+.itemBanner:hover .itemImgBanner {
+     transform: scale(1.05);
+}
+
+.itemLink {
+     position: relative;
+}
+
+.itemImgSneaker {
+     width: 100%;
+     height: 100%;
+     transition: all ease-out 1.2s;
+}
+
+.itemImgBanner {
+     width: 100%;
+     height: 100%;
+     transition: all ease-out 1.2s;
+}
+
+.sneakerText {
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 50px;
+}
+
+.sneakerText h5 {
+     color: #222222;
+     font-size: 3rem;
+     font-weight: 400;
+     margin-bottom: 16px;
+}
+
+.sneakerText h2 {
+     color: #222222;
+     font-size: 5rem;
+     line-height: 5rem;
+     font-weight: 700;
+     margin-bottom: 16px;
+}
+
+.bannerText {
+     position: absolute;
+     padding-left: 50px;
+     top: 50%;
+     transform: translateY(-50%);
+     z-index: 1;
+}
+
+.bannerTextRight {
+     right: 15px;
+     width: 50%
+}
+
+.bannerText h2 {
+     font-size: 5rem;
+     line-height: 5rem;
+     color: #fff;
+     margin: 0;
+     margin-bottom: 16px;
+}
+
+.bannerText h5 {
+     color: #fff;
+     font-size: 3rem;
+     font-weight: 400;
+}
+
+.bannerBtn {
+     height: 100%;
+     margin-top: 50px;
+     display: inline-block;
+     text-decoration: none;
+     font-size: 1.8rem;
+     background: #222;
+     color: #fff;
+     padding: 15px 50px;
+     border-radius: 50px;
+     text-transform: capitalize;
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     transition: .3s;
+}
+
+.bannerBtn:hover {
+     background: #c50215;
+}
+
+
+/* Responsive */
+@media (min-width: 740px) and (max-width: 1023px) {
+     .sneakerText h5 {
+          color: #222222;
+          font-size: 2rem;
+          font-weight: 400;
+          margin-bottom: 0;
+     }
+
+     .sneakerText h2 {
+          color: #222222;
+          font-size: 4rem;
+          line-height: 4rem;
+          font-weight: 700;
+          margin-bottom: 0;
+     }
+
+     .bannerText h2 {
+          font-size: 2.7rem;
+          line-height: 2.7rem;
+     }
+
+     .bannerText h5 {
+          color: #fff;
+          font-size: 2rem;
+          font-weight: 400;
+     }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+     .itemSneaker {
+          display: none;
+     }
+
+     .itemBanner {
+          width: 100%;
+     }
+
+     .bannerText {
+          padding-left: 20px;
+     }
+
+     .bannerText h2 {
+          font-size: 2rem;
+          line-height: 2rem;
+          color: #fff;
+          margin-bottom: 8px;
+     }
+
+     .bannerText h5 {
+          color: #fff;
+          font-size: 1.4rem;
+          font-weight: 400;
+     }
+
+     .bannerBtn {
+          margin-top: 20px;
+          font-size: 1.4rem;
+          padding: 8px 12px;
+     }
+}

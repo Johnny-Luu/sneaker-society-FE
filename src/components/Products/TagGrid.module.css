@@ -1,0 +1,27 @@
+.tagContainer {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  padding-left: 20px;
+}
+
+.tagItem {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #f4f4f4;
+  color: #555;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tagItemActive {
+  background: #c50215;
+  color: #fff;
+}
+
+.tagItem:hover {
+  background: #c50215;
+  color: #fff;
+  transition: 0.3s;
+}

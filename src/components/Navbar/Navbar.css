@@ -1,0 +1,278 @@
+:root {
+  --navbar-height: 65px;
+  --btn-main-color: rgb(126, 51, 224);
+}
+
+/* Main navbar */
+
+.header__container {
+  box-sizing: border-box;
+  height: var(--navbar-height);
+  padding: 0 32px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  animation: rotate 0.5s ease-in-out;
+}
+
+.navbar-on-scroll {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: dropdown 0.5s ease-in-out;
+}
+
+.mobile-menu-icon {
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+  display: none;
+}
+
+.header__logo {
+  flex: 1;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.header__logo-brand {
+  width: 75px;
+  margin-top: 15px;
+}
+
+.header__navbar {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__navbar-item {
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.header__navbar-item p {
+  position: relative;
+}
+
+.header__navbar-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.header__navbar-item p::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  display: none;
+  animation: expand ease-in 0.25s;
+}
+
+.header__navbar-item:hover p::before {
+  display: block;
+}
+
+.header__btn-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__btn-container i {
+  font-size: 1.8rem;
+  margin-left: 16px;
+}
+
+.header__btn-container i:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.header__search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.header__input-search {
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-style: italic;
+  transform: scale(0);
+  transition: width 0.3s, transform 0.3s ease 0.2s, opacity 0.3s ease 0.2s,
+    visibility 0.3s ease 0.2s, color 0.3s linear, background 0.3s linear;
+}
+
+.header__input-search:focus {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.appear {
+  transform: scale(1);
+}
+
+/* Dropdown menu at Product */
+
+.navbar__product-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 400px;
+  top: 25px;
+  left: -120px;
+  z-index: 10;
+  display: none;
+  animation: rotate 0.5s ease-in-out;
+  transform-origin: top center;
+}
+
+#navbar__product:hover .navbar__product-dropdown {
+  display: flex;
+}
+
+/* the bridge */
+
+#navbar__product::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -10px;
+  background-color: transparent;
+}
+
+.navbar__product-icon {
+  display: none;
+}
+
+.navbar__product-container {
+  width: 33.33333%;
+  padding: 16px;
+}
+
+.navbar__product-item {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__product-item:hover h4,
+.navbar__product-item:hover img {
+  opacity: 0.7;
+}
+
+.navbar__product-item__img {
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.cart-btn {
+  color: black;
+}
+
+/* Modal */
+
+.ModalReact__Overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 11;
+  transition: 0.5s;
+}
+
+.ModalReact__Content {
+  position: fixed;
+  inset: 40px;
+  border: 0px;
+  padding: 50px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  width: 500px;
+  height: 600px;
+  box-shadow: 7px 6px 40px 0 rgb(204 204 223 / 16%);
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+/* Close button */
+
+.close_btn {
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  transition: all 0.5s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.close_btn:hover {
+  color: black;
+}
+
+/* ANIMATIONS */
+
+@keyframes expand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--navbar-height);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.image {
+  margin: 0 12px;
+}
+.image:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.titleText {
+}
+
+.arrow {
+  margin-right: 100px;
+  padding: 6px;
+  color: #888;
+  transition: 0.5s;
+}
+
+.arrowActive {
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+
+.childContainer {
+  display: none;
+  font-size: 1.8rem;
+  padding: 0px 0 0 40px;
+  list-style-type: none;
+  /* animation: dropBoxScaleUp 0.5s; */
+}
+
+.childContainerActive {
+  display: block;
+  animation: dropBoxScaleDown 0.5s;
+  transform-origin: top;
+}
+
+.childText {
+  cursor: pointer;
+}
+
+.childTextActive {
+  font-weight: 600;
+}
+
+@keyframes dropBoxScaleDown {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* @keyframes dropBoxScaleUp {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+} */
+
+/* responsive */
+@media (max-width: 1250px) {
+  .arrow {
+    margin-right: 50px;
+  }
+}

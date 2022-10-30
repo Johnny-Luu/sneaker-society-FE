@@ -1,0 +1,54 @@
+.filterContainer {
+  padding: 12px 55px 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showingAmount {
+  font-size: 1.5rem;
+}
+
+.selection {
+  font-family: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  background: #f4f4f4;
+  padding: 0 10px 0 10px;
+  border: 1px #ccc solid;
+  border-radius: 2px;
+}
+
+.singleOption {
+  background-color: white;
+}
+
+@media (max-width: 990px) {
+  .filterContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 55px 15px 100px;
+  }
+
+  .showingAmount {
+    margin-bottom: 20px;
+  }
+
+  .selection {
+    width: 170px;
+    height: 40px;
+  }
+
+  .singleOption {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .filterContainer {
+    padding: 12px 55px 15px 14%;
+  }
+}

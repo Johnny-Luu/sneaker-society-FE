@@ -1,0 +1,66 @@
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  align-items: center;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.paginationMainPart {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.currentPageContainer {
+  padding: 15px 30px;
+  background-color: #c50215;
+  border-radius: 999px;
+  color: white;
+}
+
+.totalPageContainer {
+  margin-left: 20px;
+}
+
+.arrowLeft,
+.arrowRight {
+  display: block;
+  padding: 15px 17px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrowLeft {
+}
+
+.arrowRight {
+  margin-left: 30px;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  color: white;
+  background-color: #c50215;
+  transition: 0.3s;
+}
+
+@media (max-width: 376px) {
+  .paginationContainer {
+    margin-top: 10px;
+  }
+
+  .currentPageContainer {
+    padding: 15px 20px;
+  }
+
+  .paginationMainPart {
+    margin-left: 15px;
+  }
+
+  .arrowRight {
+    margin-left: 15px;
+  }
+}

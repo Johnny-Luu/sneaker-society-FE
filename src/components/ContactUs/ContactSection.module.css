@@ -1,0 +1,101 @@
+/* .contact {
+
+} */
+
+.sectionContact {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.divContact {
+    width: 50%;
+    margin-right: 25px;
+
+}
+.divContact h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+
+.divForm {
+    width: 50%;
+    margin-left: 10px;
+}
+.divForm h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+
+.divImg {
+    display: flex;
+    justify-content: center;
+    
+    box-sizing: border-box;
+
+    margin-bottom: 70px;
+}
+.divImg img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+@media (max-width: 1200px) {
+    .sectionContact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .divContact {
+        width: 85%;
+
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .divForm {
+        width: 85%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .divContact, 
+    .divForm {
+        width: 90%;
+    }
+    .divContact h1,
+    .divForm h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .divContact h1,
+    .divForm h1 {
+        font-size: 3.0rem;
+        line-height: 3.0rem;
+    }
+}
+
+@media (max-width: 321px) {
+    .divContact h1,
+    .divForm h1 {
+        font-size: 2.7rem;
+        line-height: 2.7rem;
+    }
+}

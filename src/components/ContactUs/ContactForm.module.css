@@ -1,0 +1,104 @@
+/* .sectionForm {
+
+} */
+
+.inputText {
+  flex: 0 0 49%;
+
+  box-sizing: border-box;
+
+  margin-bottom: 15px;
+  padding: 15px 20px;
+
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: #f4f4f4;
+}
+.inputText::placeholder {
+  color: #b0bec5;
+}
+.inputText:focus {
+  outline: none;
+}
+
+.sectionForm .inputInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.sectionForm .inputSubject {
+  display: flex;
+  flex-direction: column;
+}
+.inputSubject textarea {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+
+  resize: none;
+}
+.inputSubject textarea::placeholder {
+  color: #b0bec5;
+}
+
+.divBtn {
+  width: 35%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.8rem;
+
+  background: #222;
+  color: #fff;
+
+  padding: 15px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+
+  position: relative;
+  transition: 0.3s;
+}
+.divBtn:hover {
+  background: #c50215;
+}
+
+@media (max-width: 770px) {
+  .inputText {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+  .inputSubject textarea {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  .divBtn a {
+    width: 45%;
+  }
+}
+
+@media (max-width: 670px) {
+  .sectionForm .inputInfo {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 414px) {
+  .inputText {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .inputSubject textarea {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .divBtn a {
+    font-size: 1.5rem;
+  }
+}

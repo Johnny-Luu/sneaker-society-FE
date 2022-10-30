@@ -1,0 +1,162 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text_default {
+  font-family: Barlow, sans-serif;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.user_form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.form {
+  width: 85%;
+}
+
+.logo_login_form {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.user_form img {
+  width: 95px;
+  vertical-align: middle;
+}
+
+/* Login form*/
+
+.greeting_login {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  text-transform: unset;
+  padding-top: 20px;
+}
+
+.login_form,
+.register_form {
+  margin-top: 1.6rem;
+}
+
+#Email_Address,
+#Password {
+  display: block;
+  width: 100%;
+  height: 55px;
+  padding: 0.6rem 1.2rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  overflow: visible;
+}
+
+.recover_form_change {
+  text-align: left;
+  font-size: 14px;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  height: 55px;
+  background-color: #000;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1.5;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.register_form_change {
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+  padding: 10px;
+  background: #f2f2f2;
+  border: 1px solid #e8eced;
+  font-size: 14px;
+}
+
+/* .arrow-right {
+    font-family: Linearicons-Free;
+    content: "\e87a";
+} */
+
+.register_form_change span {
+  margin-right: 0.5rem;
+}
+
+.sign_up_form_change {
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+  padding: 10px;
+  background: #f2f2f2;
+  border: 1px solid #e8eced;
+  font-size: 16px;
+}
+
+.sign_up_form_change a {
+  color: black;
+}
+
+/* Recover form*/
+
+.title_recover {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #c50215;
+}
+
+.login_form a:hover {
+  color: #c50215;
+}
+
+.login_form a {
+  text-decoration: none;
+  color: #c5c4c4;
+}
+
+.mb-1 {
+  margin-bottom: 1.6rem;
+}

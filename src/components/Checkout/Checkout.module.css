@@ -1,0 +1,87 @@
+.modal {
+    background: rgba(0, 0, 0 , 0.6);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.checkoutContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.checkoutDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+
+    box-sizing: content-box;
+
+    margin: 20px 0;
+    padding: 60px;
+
+    background: #fff;
+}
+
+.checkoutDiv img {
+    width: 200px;
+
+    margin-bottom: 5px;
+}
+
+.checkoutDiv h3 {
+    margin: 20px 10px;
+
+    font-size: 2.4rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.btnDiv {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.btnDiv a {
+    
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6rem;
+
+    background: #222;
+    color: #fff;
+
+    padding: 15px 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+.btnDiv a:hover {
+    background: #1dbd67;
+    color: white;
+}
+
+
+@media (max-width: 414px) {
+    .checkoutDiv {
+        margin: 5px;
+        padding: 20px 10px;
+    }
+    .checkoutDiv img {
+        width: 120px;
+    }
+    
+}

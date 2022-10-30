@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  display: table-cell;
+}
+.username {
+  display: table-cell;
+  vertical-align: middle;
+  height: 64px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.symbol {
+  font-size: 24px;
+  display: table-cell;
+}
+.title {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.container div:hover {
+  cursor: pointer;
+}
+.isChosen {
+  font-weight: bolder;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 10px;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

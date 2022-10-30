@@ -1,0 +1,53 @@
+.contentPage {
+    margin: 87px 90px 110px 90px;
+    padding: 62px 15px 44px 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.errorTitle {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 49px;
+}
+
+
+.buttonBack {
+    width: 199px;
+    height: 47px;
+    line-height: 45px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.6em;
+    font-weight: 600;
+    background: #000;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    border: 2px solid #000;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    color: #c5c4c4;;
+}
+
+.buttonBack:hover {
+    color: #222;
+    background: 0 0;
+}
+
+
+@media (max-width: 739px) {
+    .contentPage {
+        margin: 87px 0px 110px 0px;
+    }
+    
+    .image {
+        width: 100%;
+    }
+    .errorTitle {
+        line-height: 40px;
+    }
+}

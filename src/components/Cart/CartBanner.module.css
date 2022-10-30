@@ -1,0 +1,68 @@
+.cartBanner {
+    position: relative;
+
+    background-image: url("../../assets/images/cart/cartbanner.png");
+    background-size: cover;
+
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1.3;
+}
+
+.cartBanner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.cartBanner h1, 
+.cartPath {
+    position: relative;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+    text-transform: capitalize;
+}
+
+
+.cartTitle {
+    color: white;
+    font-size: 5rem;
+
+    margin-bottom: 1rem;
+}
+
+.cartPath,
+.cartPath a {
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+
+    text-decoration: none;
+}
+.cartPath a:hover {
+    color: red;
+}
+
+@media (max-width: 415px) {
+    .cartBanner h1 {
+        font-size: 4rem;
+    }
+    .cartPath {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .cartBanner h1 {
+        font-size: 3.5rem;
+    }
+}
