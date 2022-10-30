@@ -118,8 +118,8 @@ function Navbar() {
     );
 
     history.push(navigationBrand);
-    
-    setNavbarMobile(false)
+
+    setNavbarMobile(false);
   }
 
   function navigationMainProduct() {
@@ -127,7 +127,7 @@ function Navbar() {
 
     history.push("/product");
 
-    setNavbarMobile(false)
+    setNavbarMobile(false);
   }
 
   function handleOpenModal(state) {
@@ -163,7 +163,7 @@ function Navbar() {
         >
           <li className="header__navbar-item">
             <Link to="/">
-              <p onClick={() => setNavbarMobile(false)} >Home</p>
+              <p onClick={() => setNavbarMobile(false)}>Home</p>
             </Link>
           </li>
 
