@@ -1,10 +1,8 @@
-import blog1 from "../../assets/images/ourBlogSrc/blog1.jpg";
-import blog2 from "../../assets/images/ourBlogSrc/blog2.jpg";
-import blog3 from "../../assets/images/ourBlogSrc/blog3.jpg";
+import { images } from "../../assets";
 
 export const BlogInfo = [
   {
-    thumbnail: blog1,
+    thumbnail: images.blog.blogOne,
     timePost: "May 5th 2020",
     titlePost: "The Love At First Sight Boots",
     description:
@@ -12,7 +10,7 @@ export const BlogInfo = [
     path: "/",
   },
   {
-    thumbnail: blog2,
+    thumbnail: images.blog.blogTwo,
     timePost: "March 20th 2020",
     titlePost: "Shoes For the Big Day",
     description:
@@ -20,7 +18,7 @@ export const BlogInfo = [
     path: "/",
   },
   {
-    thumbnail: blog3,
+    thumbnail: images.blog.blogThree,
     timePost: "March 17th 2020",
     titlePost: "Never Enough Lace - Ups",
     description:

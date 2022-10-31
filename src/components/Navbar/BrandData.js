@@ -1,39 +1,34 @@
-import NikeBrand from "../../assets/logos/nike-logo.svg";
-import AdidasBrand from "../../assets/logos/adidas-logo.svg";
-import PumaBrand from "../../assets/logos/puma-logo.svg";
-import JordanBrand from "../../assets/logos/air-jordan-logo.svg";
-import NewBalanceBrand from "../../assets/logos/new-balance-logo.svg";
-import ConverseBrand from "../../assets/logos/converse-logo.svg";
+import { logos } from "../../assets";
 
 export const Brands = [
   {
     title: "Nike",
-    logo: NikeBrand,
+    logo: logos.nike,
     path: "/product/Nike",
   },
   {
     title: "Adidas",
-    logo: AdidasBrand,
+    logo: logos.adidas,
     path: "/product/Adidas",
   },
   {
     title: "Puma",
-    logo: PumaBrand,
+    logo: logos.puma,
     path: "/product/Puma",
   },
   {
     title: "Jordan",
-    logo: JordanBrand,
+    logo: logos.jordan,
     path: "/product/Jordan",
   },
   {
     title: "New Balance",
-    logo: NewBalanceBrand,
+    logo: logos.newBalance,
     path: "/product/NewBalance",
   },
   {
     title: "Converse",
-    logo: ConverseBrand,
+    logo: logos.converse,
     path: "/product/Converse",
   },
 ];

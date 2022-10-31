@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import SliderCSS from "./SliderHomepage.module.css";
 import SliderData from "./SliderHomePageData";
-import instagram from "../../assets/images/instagram.png";
-import twitter from "../../assets/images/twitter.png";
-import facebook from "../../assets/images/facebook.png";
 import { Link } from "react-router-dom";
+import { images } from "../../assets";
 
 const SliderHomepage = () => {
   //set state for information of slider
@@ -77,17 +75,17 @@ const SliderHomepage = () => {
       <ul className={SliderCSS.sci}>
         <li>
           <a href="#">
-            <img src={instagram} alt="" />
+            <img src={images.instagramBlack} alt="" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src={facebook} alt="" />
+            <img src={images.facebookBlack} alt="" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src={twitter} alt="" />
+            <img src={images.twitterBlack} alt="" />
           </a>
         </li>
       </ul>

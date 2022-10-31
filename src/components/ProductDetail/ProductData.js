@@ -1,7 +1,4 @@
-import Nike1 from "../../assets/images/sneaker-transparent/nike-1.png";
-import Nike2 from "../../assets/images/sneaker-transparent/nike-2.png";
-import Nike3 from "../../assets/images/sneaker-transparent/nike-3.png";
-import Nike4 from "../../assets/images/sneaker-transparent/nike-4.png";
+import { images } from "../../assets";
 
 export const OneProduct = {
   id: "abc123",
@@ -15,19 +12,19 @@ export const OneProduct = {
   size: [37, 37.5, 38, 39, 39.5, 40, 40.5, 41, 42],
   src: [
     {
-      img: Nike1,
+      img: images.sneakerTransparent.nikeOne,
       color: "Green",
     },
     {
-      img: Nike2,
+      img: images.sneakerTransparent.nikeTwo,
       color: "Red-White",
     },
     {
-      img: Nike3,
+      img: images.sneakerTransparent.nikeThree,
       color: "White",
     },
     {
-      img: Nike4,
+      img: images.sneakerTransparent.nikeFour,
       color: "Black-White",
     },
   ],

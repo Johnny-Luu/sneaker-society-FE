@@ -2,13 +2,10 @@ import React from "react";
 import SliderHomepage from "../components/SliderHomePage/SliderHomepage";
 import SliderDealOfTheWeek from "../components/SliderDealOfTheWeek/SliderDealOfTheWeek";
 import CollectionItem from "../components/CollectionItem/CollectionItem";
-import BannerFirst from "../assets/images/banner/banner-homepage-1.jpg";
-import BannerSecond from "../assets/images/banner/banner-homepage-2.jpg";
-import SneakerFirst from "../assets/images/banner/sneaker-homepage-1.jpg";
-import SneakerSecond from "../assets/images/banner/sneaker-homepage-2.jpg";
 import OurBlog from "../components/OurBlog/OurBlog";
 import ServiceSection from "../components/ServiceSection/ServiceSection";
 import Style from "../styles/HomePage.module.css";
+import { images } from "../assets";
 
 const HomePage = () => {
   return (
@@ -23,22 +20,22 @@ const HomePage = () => {
       <CollectionItem
         subTxtSneaker="Running Shoes"
         mainTxtSneaker="Nike Just Do It"
-        sneakerImg={SneakerFirst}
+        sneakerImg={images.banner.firstSneaker}
         subTxtBanner="Season Off 30-10%"
         mainTxtBannerAbove="The Benefits"
         mainTxtBannerUnder="Of Running"
-        bannerImg={BannerFirst}
+        bannerImg={images.banner.firstBanner}
       />
 
       {/* the second collection item */}
       <CollectionItem
         subTxtSneaker="Best Sellers"
         mainTxtSneaker="Adidas Shoes"
-        sneakerImg={SneakerSecond}
+        sneakerImg={images.banner.secondSneaker}
         subTxtBanner="New Arrivals"
         mainTxtBannerAbove="Women Hoodies &"
         mainTxtBannerUnder="Sweatshirts"
-        bannerImg={BannerSecond}
+        bannerImg={images.banner.secondBanner}
         reverse={true}
       />
       <OurBlog />

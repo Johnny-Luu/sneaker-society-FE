@@ -1,26 +1,23 @@
-import shipped from "../../assets/images/service/shipped.png";
-import returnmoney from "../../assets/images/service/returnmoney.png";
-import customersupport from "../../assets/images/service/customersupport.png";
-import qualityassurance from "../../assets/images/service/qualityassurance.png";
+import { images } from "../../assets";
 
 export const serviceInfo = [
   {
-    img: shipped,
+    img: images.service.shipped,
     serviceName: "FREE SHIPPING",
     serviceDescription: "Free ship on all orders",
   },
   {
-    img: returnmoney,
+    img: images.service.returnmoney,
     serviceName: "FREE RETURN",
     serviceDescription: "30 days money back guarantee!",
   },
   {
-    img: customersupport,
+    img: images.service.customersupport,
     serviceName: "SUPPORT 24/7",
     serviceDescription: "We support online 24hrs",
   },
   {
-    img: qualityassurance,
+    img: images.service.qualityassurance,
     serviceName: "HIGH QUALITY",
     serviceDescription: "Genuine products from huge brands",
   },

@@ -4,15 +4,14 @@ import LeftSideInfo from "./LeftSideInfo";
 import MainPartInfo from "./MainPartInfo";
 import style from "./PersonalInfo.module.css";
 import BackgroundWithPath from "../Products/BackgroundWithPath";
-import backgroundImageTop from "../../assets/images/productDetail/detail-product-bg.jpg";
-//../assets/images/productDetail/detail-product-bg.jpg
+import { images } from "../../assets";
 function PersonalInfo({ bool }) {
   const [account, setAccount] = useState(bool);
 
   return (
     <>
       <BackgroundWithPath
-        img={backgroundImageTop}
+        img={images.productDetail.backgroundImageTop}
         pathText={account ? "Home/ account" : "Home/ history"}
         title={account ? "My information" : "Billing History"}
       />

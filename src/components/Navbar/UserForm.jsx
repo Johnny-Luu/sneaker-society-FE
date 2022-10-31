@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./UserForm.css";
-import sneaker from "../../assets/images/logo.png";
-import recover from "../../assets/icons/recover.png";
-import register from "../../assets/icons/register.jpg";
 import {
   getCustomerLogin,
   getCustomerByEmail,
@@ -16,6 +13,7 @@ import { initFavouriteList } from "../../redux/favourite-slice";
 import { initCartList } from "../../redux/cart-slice";
 import ToastMessage from "../ToastMessage/ToastMessage";
 import { createFavouriteList } from "../../api/favourite-api";
+import { icons, images } from "../../assets";
 
 function UserForm({ handleOpen }) {
   const [loginDisplay, setLoginDisplay] = useState("block");
@@ -138,7 +136,7 @@ function UserForm({ handleOpen }) {
           style={{ display: `${loginDisplay}` }}
         >
           <div className="logo_login_form logo">
-            <img src={sneaker} alt="brand logo"></img>
+            <img src={images.logo} alt="brand logo"></img>
           </div>
           <h2 className="greeting_login">Great to have you back!</h2>
           <form className="login_form">
@@ -192,7 +190,7 @@ function UserForm({ handleOpen }) {
           style={{ display: `${registerDisplay}` }}
         >
           <div className="logo_register_form logo">
-            <img src={register}></img>
+            <img src={icons.register}></img>
           </div>
           <h2 className="title_register">REGISTER</h2>
           <form className="register_form">
@@ -235,7 +233,7 @@ function UserForm({ handleOpen }) {
           style={{ display: `${recoverDisplay}` }}
         >
           <div className="logo_recover_form logo">
-            <img src={recover}></img>
+            <img src={icons.recover}></img>
           </div>
           <h2 className="title_recover">RESET YOUR PASSWORD</h2>
           <form>

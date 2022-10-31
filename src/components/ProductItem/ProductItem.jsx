@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import style from "./ProductItem.module.css";
-import Nike1 from "../../assets/images/sneaker-transparent/jordan-1.png"; //temp image
 import { selectCustomer } from "../../redux/customer-slice";
 import { selectCartList, addCartItemToRedux } from "../../redux/cart-slice";
 import { createCart, addToCart, getCurrent } from "../../api/cart-api";
@@ -21,6 +20,7 @@ import {
   addFavouriteToRedux,
   removeFavouriteFromRedux,
 } from "../../redux/favourite-slice";
+import { images } from "../../assets";
 
 function ProductItem({ data, marginRight }) {
   const customer = useSelector(selectCustomer); //get current logged in customer
@@ -187,7 +187,7 @@ function ProductItem({ data, marginRight }) {
         className={style.card}
       >
         <div className={style.imgBox}>
-          <img src={data.images || Nike1} />
+          <img src={data.images || images.sneakerTransparent.jordanOne} />
         </div>
 
         <div className={style.popup}>

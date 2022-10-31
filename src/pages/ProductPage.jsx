@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import backgroundImageTop from "../assets/images/productDetail/detail-product-bg.jpg";
 import BackgroundWithPath from "../components/Products/BackgroundWithPath";
 import ProductsMainPart from "../components/Products/ProductsMainPart";
 import FloatingFilter from "../components/Products/FloatingFilter";
 import SideBar from "../components/Products/SideBar";
-import { resetFilter } from "../redux/product-arrange-slice";
 import { useDispatch } from "react-redux";
+import { images } from "../assets";
 
 const ProductPage = (props) => {
   const dispatch = useDispatch();
@@ -33,7 +32,7 @@ const ProductPage = (props) => {
     <div style={{ position: "relative" }}>
       {/* Image on the top of page with page title */}
       <BackgroundWithPath
-        img={backgroundImageTop}
+        img={images.productDetail.backgroundImageTop}
         pathText="Home / Product"
         title="Our Shoes"
       />

@@ -1,5 +1,4 @@
 import React from "react";
-// import BackGround from "../../assets/images/productDetail/detail-product-bg.jpg";
 import style from "./BackgroundWithPath.module.css";
 
 function BackgroundWithPath({ img, pathText, title }) {

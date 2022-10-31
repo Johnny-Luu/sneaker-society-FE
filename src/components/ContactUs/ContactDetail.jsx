@@ -1,11 +1,6 @@
 import React, { Component } from "react";
-
 import style from "./ContactDetail.module.css";
-
-import homeaddress from "../../assets/images/contact/home_address.png";
-import phonecall from "../../assets/images/contact/phonecall.png";
-import email from "../../assets/images/contact/email.png";
-import clock from "../../assets/images/contact/clock.png";
+import { images } from "../../assets";
 
 const ContactDetail = () => {
   return (
@@ -18,25 +13,25 @@ const ContactDetail = () => {
 
       <div className={style.divInfo}>
         <div>
-          <img src={homeaddress} alt="" />
+          <img src={images.contact.homeaddress} alt="" />
           <p>
             <b>Address:</b> &nbsp; 1234 Heaven Stress, Beverly Hill.
           </p>
         </div>
         <div>
-          <img src={phonecall} alt="" />
+          <img src={images.contact.phonecall} alt="" />
           <p>
             <b>Telephone:</b> &nbsp; +01 234 567 89
           </p>
         </div>
         <div>
-          <img src={email} alt="" />
+          <img src={images.contact.email} alt="" />
           <p>
             <b>Email:</b> &nbsp; info@pixelcreative.com
           </p>
         </div>
         <div>
-          <img src={clock} alt="" />
+          <img src={images.contact.clock} alt="" />
           <p>
             <b>Open Door:</b> &nbsp; 8:00 - 19:00, Monday - Saturday
           </p>

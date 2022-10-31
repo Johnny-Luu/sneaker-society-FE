@@ -1,8 +1,8 @@
-import sneaker from "../../assets/images/ColoredSneaker.png";
+import { images } from "../../assets";
 
 export const CartItem = [
   {
-    thumbnail: sneaker,
+    thumbnail: images.coloredSneaker,
     name: "SneakerDemo",
     detailColor: "Red",
     detailSize: "XXL",
@@ -11,7 +11,7 @@ export const CartItem = [
     total: "244.000 VND",
   },
   {
-    thumbnail: sneaker,
+    thumbnail: images.coloredSneaker,
     name: "SneakerDemo",
     detailColor: "Red",
     detailSize: "XXL",
@@ -20,7 +20,7 @@ export const CartItem = [
     total: "244.000 VND",
   },
   {
-    thumbnail: sneaker,
+    thumbnail: images.coloredSneaker,
     name: "SneakerDemo",
     detailColor: "Red",
     detailSize: "XXL",

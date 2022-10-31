@@ -1,13 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-
-import style from "./ContactSection.module.css";
 import ContactDetail from "./ContactDetail";
 import ContactForm from "./ContactForm";
-
+import style from "./ContactSection.module.css";
 import ServiceSection from "../ServiceSection/ServiceSection.jsx";
-
-import googlemap from "../../assets/images/contact/googlemap.jpg";
+import { images } from "../../assets";
 
 const ContactSection = () => {
   return (
@@ -26,7 +23,7 @@ const ContactSection = () => {
 
       <div className={style.divImg}>
         <Link to="">
-          <img src={googlemap} alt="A demo map" />
+          <img src={images.contact.googlemap} alt="A demo map" />
         </Link>
       </div>
 

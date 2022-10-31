@@ -1,11 +1,11 @@
 import React from "react";
-import BackGround from "../../assets/images/productDetail/detail-product-bg.jpg";
+import { images } from "../../assets";
 import style from "./BackGroundImg.module.css";
 
 function BackGroundImg() {
   return (
     <div className={style.bgContainer}>
-      <img src={BackGround} />
+      <img src={images.productDetail.backgroundImageTop} />
     </div>
   );
 }

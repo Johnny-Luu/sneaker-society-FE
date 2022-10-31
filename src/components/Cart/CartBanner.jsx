@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import style from "./CartBanner.module.css";
-//import cartbanner from "../../assets/images/cart/cartbanner.jpg"
 
 const CartBanner = () => {
   return (

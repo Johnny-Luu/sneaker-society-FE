@@ -1,10 +1,10 @@
 import React from "react";
-import empty from "../../assets/images/empty.jpg";
 import style from "./ModalAccount.module.css";
 import { useHistory } from "react-router";
 import { useDispatch } from "react-redux";
 import { logout } from "../../redux/customer-slice";
 import ToastMessage from "../ToastMessage/ToastMessage";
+import { images } from "../../assets";
 
 function ModalAccount() {
   const dispatch = useDispatch();
@@ -41,7 +41,7 @@ function ModalAccount() {
           borderRadius: "50%",
           border: "1px solid white",
         }}
-        src={empty}
+        src={images.empty}
         alt=""
         width="24px"
         className={style.image}

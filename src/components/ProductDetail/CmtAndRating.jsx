@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCustomer } from "../../redux/customer-slice";
 import CommentItem from "./CommentItem";
-import Nike1 from "../../assets/images/sneaker-transparent/nike-1.png";
 import ReactStars from "react-rating-stars-component";
 import { Bar } from "react-chartjs-2";
 import ToastMessage from "../ToastMessage/ToastMessage";

@@ -1,6 +1,4 @@
-import slider1Image from "../../assets/images/sneaker-transparent/nike-7-crop-right.png";
-import slider2Image from "../../assets/images/sneaker-transparent/vans-1.png";
-import slider3Image from "../../assets/images/runningBlueSneaker-crop-right.png";
+import { images } from "../../assets";
 
 const SliderData = [
   {
@@ -9,7 +7,7 @@ const SliderData = [
     heading: "Basketball sneaker",
     description:
       "Nothing beats seeing your kicks in a perfectly clear sneaker case. Give your pairs the luxury it deserves with our range of sturdy and full stackable sneaker displate crates!",
-    image: slider1Image,
+    image: images.sneakerTransparent.sliderOne,
     btnText: "Shop now",
   },
   {
@@ -18,7 +16,7 @@ const SliderData = [
     heading: "Fashioned sneaker",
     description:
       "The smoke basic colourways are taking the fashion scene BY STORM! Take your outfit to the next level with this carefully curated selection of Vans!",
-    image: slider2Image,
+    image: images.sneakerTransparent.sliderTwo,
     btnText: "Shop now",
   },
   {
@@ -27,7 +25,7 @@ const SliderData = [
     heading: "Running sneaker",
     description:
       "Stay fresh this spring time with spring essentials! We've curated a list of our best gear right here - from Jordans to Dunks, FOG to SSS merch!",
-    image: slider3Image,
+    image: images.sneakerTransparent.sliderThree,
     btnText: "Shop now",
   },
 ];

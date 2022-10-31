@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Checkout.module.css";
-
-import check from "../../assets/images/cart/check.png";
+import { images } from "../../assets";
 
 const Checkout = ({ showModal, setShowModal }) => {
   const closeClick = () => {
@@ -13,7 +12,7 @@ const Checkout = ({ showModal, setShowModal }) => {
     <div className={style.modal}>
       <div className={style.checkoutContainer}>
         <div className={style.checkoutDiv}>
-          <img src={check} alt="" />
+          <img src={images.cart.check} alt="" />
           <h3>CHECKOUT SUCCEEDED!</h3>
           <div className={style.btnDiv}>
             <Link to="/" onClick={closeClick}>

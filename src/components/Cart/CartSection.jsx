@@ -1,36 +1,29 @@
-import React, { useState, useEffect } from "react";
-
-import { useSelector, useDispatch } from "react-redux";
-import { selectCustomer } from "../../redux/customer-slice";
-import styleCartTable from "./CartTable.module.css";
-import sneaker from "../../assets/images/ColoredSneaker.png"; //temp image
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import {
-  getCurrent,
-  removeCartItem,
+  addToCart,
   checkout,
   createCart,
-  addToCart,
+  getCurrent,
+  removeCartItem,
 } from "../../api/cart-api";
-import { Link } from "react-router-dom";
+import { selectCustomer } from "../../redux/customer-slice";
+import styleCartTable from "./CartTable.module.css";
 
-import styleCartTotal from "./CartTotal.module.css";
 import styleCartInfo from "./CartCustomerInfo.module.css";
 import styleSection from "./CartSection.module.css";
+import styleCartTotal from "./CartTotal.module.css";
 
-import checked from "../../assets/icons/checked.png";
-import emptycart from "../../assets/images/cart/emptycart.png";
-import cross from "../../assets/images/cart/cross.png";
-import plus from "../../assets/images/cart/plus.png";
-import minus from "../../assets/images/cart/minus.png";
-import {
-  selectCartList,
-  addCartItemToRedux,
-  removeCartItemFromRedux,
-  clearCartList,
-} from "../../redux/cart-slice";
-import ToastMessage from "../ToastMessage/ToastMessage";
-import Checkout from "../Checkout/Checkout";
 import { updateQuantity } from "../../api/cart-api";
+import {
+  clearCartList,
+  removeCartItemFromRedux,
+  selectCartList,
+} from "../../redux/cart-slice";
+import Checkout from "../Checkout/Checkout";
+import ToastMessage from "../ToastMessage/ToastMessage";
+import { icons, images } from "../../assets";
 
 const CartSection = () => {
   //CartTable
@@ -223,7 +216,7 @@ const CartSection = () => {
         <Checkout showModal={showModal} setShowModal={setShowModal} />
       ) : null}
       <div className={styleSection.emptyCart}>
-        <img src={emptycart} alt="" />
+        <img src={images.cart.emptycart} alt="" />
         <p>There is not any product in the cart yet!</p>
         <div className={styleSection.btnEmpty}>
           <Link to="/product">Back to Product Page</Link>
@@ -263,7 +256,7 @@ const CartSection = () => {
                           </div>
                           <div className={styleCartTable.quantityDiv}>
                             <img
-                              src={minus}
+                              src={images.cart.minus}
                               onClick={() => {
                                 if (item.quantity <= 1) {
                                   ToastMessage(
@@ -278,7 +271,7 @@ const CartSection = () => {
                             />
                             <span>{item.quantity}</span>
                             <img
-                              src={plus}
+                              src={images.cart.plus}
                               onClick={() => {
                                 item.quantity++;
                                 handleUpdateQuantity(item.id, item.quantity);
@@ -297,7 +290,7 @@ const CartSection = () => {
                     <th className={styleCartTable.quantity}>
                       <div className={styleCartTable.quantityDiv}>
                         <img
-                          src={minus}
+                          src={images.cart.minus}
                           onClick={() => {
                             if (item.quantity <= 1) {
                               ToastMessage(
@@ -312,7 +305,7 @@ const CartSection = () => {
                         />
                         <span>{item.quantity}</span>
                         <img
-                          src={plus}
+                          src={images.cart.plus}
                           onClick={() => {
                             item.quantity++;
                             handleUpdateQuantity(item.id, item.quantity);
@@ -330,7 +323,7 @@ const CartSection = () => {
                     <th className={styleCartTable.delete}>
                       <img
                         id={styleCartTable.deleteBtn}
-                        src={cross}
+                        src={images.cart.cross}
                         onClick={() => {
                           handleRemoveItem(item.id);
                         }}
@@ -405,7 +398,7 @@ const CartSection = () => {
                 <p>{totalPrice} USD</p>
               </div>
               <div className={styleCartTotal.checked}>
-                <img src={checked} alt="" />
+                <img src={icons.checked} alt="" />
                 <p>Shipping and taxes calculated at checkout</p>
               </div>
               <div

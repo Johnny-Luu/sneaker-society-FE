@@ -1,12 +1,7 @@
 import React, { Component } from "react";
-//import "../../../node_modules/bootstrap/dist/css/bootstrap.css"
-//import "./footerStyle.css"
 import footerCSS from "./footerStyle.module.css";
-
-import instagram from "../../assets/images/footerSrc/instagram.png";
-import twitter from "../../assets/images/footerSrc/twitter.png";
-import facebook from "../../assets/images/footerSrc/facebook.png";
 import { Link } from "react-router-dom";
+import { images } from "../../assets";
 
 export class Footer extends Component {
   render() {
@@ -97,17 +92,17 @@ export class Footer extends Component {
             <ul className={footerCSS.icon}>
               <li>
                 <Link to="">
-                  <img src={instagram} alt="" />
+                  <img src={images.footer.instagram} alt="" />
                 </Link>
               </li>
               <li>
                 <Link to="">
-                  <img src={facebook} alt="" />
+                  <img src={images.footer.facebook} alt="" />
                 </Link>
               </li>
               <li>
                 <Link to="">
-                  <img src={twitter} alt="" />
+                  <img src={images.footer.twitter} alt="" />
                 </Link>
               </li>
             </ul>

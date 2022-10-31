@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { selectCustomer } from "../../redux/customer-slice";
 import style from "./CartTable.module.css";
-import sneaker from "../../assets/images/ColoredSneaker.png"; //temp image
 import { getCurrent } from "../../api/cart-api";
+import { images } from "../../assets";
 
 // THIS IS NOT SUPPOSED TO BE USED !!
 ///////////////////////////////////////
@@ -60,7 +60,7 @@ const CartTable = () => {
             <tr>
               <th>
                 <div className={style.mainInfo}>
-                  <img src={sneaker} alt="" />
+                  <img src={images.coloredSneaker} alt="" />
                   <div className={style.nameProduct}>
                     <p>{item.name}</p>
                     <div className={style.propsProduct}>

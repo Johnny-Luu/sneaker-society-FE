@@ -1,10 +1,10 @@
+import { images } from "../../assets";
 import style from "./CommentItem.module.css";
-import avatarImg from "../../assets/images/img_avatar.png";
 
 function CommentItem({ customerID, customerName, comment, rating, time }) {
   return (
     <div className={style.mainContainer}>
-      <img className={style.avatar} src={avatarImg} alt="avatar" />
+      <img className={style.avatar} src={images.avatar} alt="avatar" />
       <div className={style.infoContainer}>
         <h2 className={style.name}>
           {customerName === "" ? "Anonymous" : customerName}

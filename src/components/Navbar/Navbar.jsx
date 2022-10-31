@@ -6,7 +6,6 @@ import UserForm from "./UserForm";
 import "./Navbar.css";
 import "./NavbarResponsive.css";
 import ModalAccount from "./ModalAccount";
-import logo from "../../assets/images/logo.png";
 
 import {
   addNavFindFilter,
@@ -18,6 +17,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { selectCustomer } from "../../redux/customer-slice";
+import { images } from "../../assets";
 
 Modal.setAppElement("#root");
 
@@ -154,7 +154,11 @@ function Navbar() {
 
         <h3 className="header__logo">
           <Link to="/">
-            <img className="header__logo-brand" src={logo} alt="brand logo" />
+            <img
+              className="header__logo-brand"
+              src={images.logo}
+              alt="brand logo"
+            />
           </Link>
         </h3>
 

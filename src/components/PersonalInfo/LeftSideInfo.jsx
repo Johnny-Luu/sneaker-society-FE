@@ -1,8 +1,7 @@
 import React from "react";
-import empty from "../../assets/images/empty.jpg";
 import style from "./LeftSideInfo.module.css";
 import { useHistory } from "react-router-dom";
-import ToastMessage from "../ToastMessage/ToastMessage";
+import { images } from "../../assets";
 
 function LeftSideInfo({ account, setAccount }) {
   const history = useHistory();
@@ -31,7 +30,7 @@ function LeftSideInfo({ account, setAccount }) {
               border: "2px solid white",
             }}
             className={style.image}
-            src={empty}
+            src={images.empty}
             alt=""
             width="64px"
           />

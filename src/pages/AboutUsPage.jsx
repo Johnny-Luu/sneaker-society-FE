@@ -1,19 +1,14 @@
 import React from "react";
-import backgroundImageTop from "../assets/images/productDetail/detail-product-bg.jpg";
-import { Link } from "react-router-dom";
 import style from "../styles/AboutUsPage.module.css";
 import ServiceSection from "../components/ServiceSection/ServiceSection";
-import backgroundImage from "../assets/images/contactus2.jpg";
 import BackgroundWithPath from "../components/Products/BackgroundWithPath";
-import tuyen from "../assets/images/aboutus/tuyen.jpg";
-import sang from "../assets/images/aboutus/sang.jpg";
-import hien from "../assets/images/aboutus/team3.jpg";
+import { images } from "../assets";
 
 function AboutUsPage() {
   return (
     <>
       <BackgroundWithPath
-        img={backgroundImageTop}
+        img={images.productDetail.backgroundImageTop}
         title="About Us"
         pathText="Home / About us"
       />
@@ -42,7 +37,11 @@ function AboutUsPage() {
         </div>
       </div>
       <div className={style.image_container}>
-        <img className={style.image} src={backgroundImageTop} alt="middle" />
+        <img
+          className={style.image}
+          src={images.productDetail.backgroundImageTop}
+          alt="middle"
+        />
       </div>
       <ServiceSection />
       <div className={style.introduce_team}>
@@ -50,7 +49,10 @@ function AboutUsPage() {
         <div className={style.team_member}>
           <div className={style.team_member_card}>
             <div className={style.team_member_img}>
-              <img src={sang} className={style.team_member_image}></img>
+              <img
+                src={images.aboutUs.sang}
+                className={style.team_member_image}
+              ></img>
             </div>
             <div className={style.team_member_info}>
               <p className={style.team_name}>Lưu Ngọc Sáng</p>
@@ -58,7 +60,10 @@ function AboutUsPage() {
           </div>
           <div className={style.team_member_card}>
             <div className={style.team_member_img}>
-              <img src={tuyen} className={style.team_member_image}></img>
+              <img
+                src={images.aboutUs.tuyen}
+                className={style.team_member_image}
+              ></img>
             </div>
             <div className={style.team_member_info}>
               <p className={style.team_name}>Phạm Hớn Tuyền</p>
@@ -66,7 +71,10 @@ function AboutUsPage() {
           </div>
           <div className={style.team_member_card}>
             <div className={style.team_member_img}>
-              <img src={hien} className={style.team_member_image}></img>
+              <img
+                src={images.aboutUs.hien}
+                className={style.team_member_image}
+              ></img>
             </div>
             <div className={style.team_member_info}>
               <p className={style.team_name}>Trần Thanh Hiền</p>

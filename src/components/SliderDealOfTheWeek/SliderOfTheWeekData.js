@@ -1,11 +1,9 @@
-import sneaker1 from "../../assets/images/sneaker-transparent/nike-8.png";
-import sneaker2 from "../../assets/images/sneaker-transparent/vans-1.png";
-import sneaker3 from "../../assets/images/sneaker-transparent/nike-7.png";
+import { images } from "../../assets";
 
 const data = [
   {
     name: 0,
-    img: sneaker1,
+    img: images.sneakerTransparent.nikeEight,
     nameOfShoes: "Jordan 3S",
     normalPrice: "251",
     salePrice: "201",
@@ -17,7 +15,7 @@ const data = [
   },
   {
     name: 1,
-    img: sneaker2,
+    img: images.sneakerTransparent.sliderTwo,
     nameOfShoes: "Vans Oldskool",
     normalPrice: "252",
     salePrice: "202",
@@ -29,7 +27,7 @@ const data = [
   },
   {
     name: 2,
-    img: sneaker3,
+    img: images.sneakerTransparent.nikeSeven,
     nameOfShoes: "Jordan Bred",
     normalPrice: "253",
     salePrice: "203",
