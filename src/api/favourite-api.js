@@ -1,9 +1,8 @@
 import Axios from "axios";
-
-const API_URL = "http://localhost:3001/favourite";
+import { API_ENDPOINT, BASE_URL } from "../constants/api-endpoint";
 
 export const getFavourites = async (customerID) => {
-  const res = await Axios.get(API_URL + "/getfavourite", {
+  const res = await Axios.get(BASE_URL + API_ENDPOINT.FAVOURITE.GET, {
     params: {
       customerID: customerID,
     },
@@ -12,7 +11,9 @@ export const getFavourites = async (customerID) => {
 };
 
 export const createFavouriteList = async (customerID) => {
-  await Axios.post(API_URL + "/createfavouritelist", { customerID: customerID })
+  await Axios.post(BASE_URL + API_ENDPOINT.FAVOURITE.CREATE_LIST, {
+    customerID: customerID,
+  })
     .then((res) => {
       console.log(res.data);
     })
@@ -22,7 +23,7 @@ export const createFavouriteList = async (customerID) => {
 };
 
 export const addFavourite = async (customerID, productID) => {
-  await Axios.post(API_URL + "/addfavourite", {
+  await Axios.post(BASE_URL + API_ENDPOINT.FAVOURITE.ADD, {
     customerID: customerID,
     productID: productID,
   })
@@ -35,7 +36,7 @@ export const addFavourite = async (customerID, productID) => {
 };
 
 export const removeFavourite = async (customerID, productID) => {
-  await Axios.post(API_URL + "/removefavourite", {
+  await Axios.post(BASE_URL + API_ENDPOINT.FAVOURITE.REMOVE, {
     customerID: customerID,
     productID: productID,
   })

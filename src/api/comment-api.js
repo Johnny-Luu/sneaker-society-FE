@@ -1,9 +1,8 @@
 import Axios from "axios";
-
-const API_URL = "http://localhost:3001/comment";
+import { API_ENDPOINT, BASE_URL } from "../constants/api-endpoint";
 
 export const getAll = async (productID) => {
-  const res = await Axios.get(API_URL + "/getall", {
+  const res = await Axios.get(BASE_URL + API_ENDPOINT.COMMENT.GET_ALL, {
     params: {
       productID: productID,
     },
@@ -12,7 +11,7 @@ export const getAll = async (productID) => {
 };
 
 export const getOneByCustomer = async (productID, customerID) => {
-  const res = await Axios.get(API_URL + "/getone", {
+  const res = await Axios.get(BASE_URL + API_ENDPOINT.COMMENT.GET_ONE, {
     params: {
       productID: productID,
       customerID: customerID,
@@ -29,7 +28,7 @@ export const createComment = async (
   rating,
   time
 ) => {
-  await Axios.post(API_URL + "/create", {
+  await Axios.post(BASE_URL + API_ENDPOINT.COMMENT.CREATE, {
     customerID: customerID,
     customerName: customerName,
     productID: productID,
@@ -48,7 +47,7 @@ export const updateComment = async (
   rating,
   time
 ) => {
-  await Axios.put(API_URL + "/update", {
+  await Axios.put(BASE_URL + API_ENDPOINT.COMMENT.UPDATE, {
     customerID: customerID,
     productID: productID,
     comment: comment,
@@ -60,7 +59,7 @@ export const updateComment = async (
 };
 
 export const deleteComment = async (customerID, productID) => {
-  await Axios.delete(API_URL + "/delete", {
+  await Axios.delete(BASE_URL + API_ENDPOINT.COMMENT.DELETE, {
     data: {
       customerID: customerID,
       productID: productID,

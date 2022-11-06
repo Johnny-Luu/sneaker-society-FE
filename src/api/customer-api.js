@@ -1,9 +1,8 @@
 import Axios from "axios";
-
-const API_URL = "http://localhost:3001/customer";
+import { API_ENDPOINT, BASE_URL } from "../constants/api-endpoint";
 
 export const getCustomerLogin = async (email, password) => {
-  const res = await Axios.get(API_URL + "/login", {
+  const res = await Axios.get(BASE_URL + API_ENDPOINT.CUSTOMER.LOGIN, {
     params: {
       email: email,
       password: password,
@@ -13,7 +12,7 @@ export const getCustomerLogin = async (email, password) => {
 };
 
 export const getCustomerByEmail = async (email) => {
-  const res = await Axios.get(API_URL + "/getbyemail", {
+  const res = await Axios.get(BASE_URL + API_ENDPOINT.CUSTOMER.GET_BY_EMAIL, {
     params: {
       email: email,
     },
@@ -22,7 +21,7 @@ export const getCustomerByEmail = async (email) => {
 };
 
 export const createCustomerAccount = async (email, password) => {
-  await Axios.post(API_URL + "/signup", {
+  await Axios.post(BASE_URL + API_ENDPOINT.CUSTOMER.SIGNUP, {
     email: email,
     password: password,
   })
@@ -41,7 +40,7 @@ export const updateCustomerAccount = async (
   newName,
   newPhone
 ) => {
-  await Axios.put(API_URL + "/update", {
+  await Axios.put(BASE_URL + API_ENDPOINT.CUSTOMER.UPDATE, {
     name: newName,
     phone: newPhone,
     address: newAddress,

@@ -1,9 +1,8 @@
 import Axios from "axios";
-
-const API_URL = "http://localhost:3001/cart";
+import { API_ENDPOINT, BASE_URL } from "../constants/api-endpoint";
 
 export const getCurrent = async (customerID) => {
-  const res = await Axios.get(API_URL + "/getcurrent", {
+  const res = await Axios.get(BASE_URL + API_ENDPOINT.CART.GET_CURRENT, {
     params: {
       customerID: customerID,
     },
@@ -12,7 +11,9 @@ export const getCurrent = async (customerID) => {
 };
 
 export const createCart = async (customerID) => {
-  await Axios.post(API_URL + "/createcart", { customerID: customerID })
+  await Axios.post(BASE_URL + API_ENDPOINT.CART.CREATE_CART, {
+    customerID: customerID,
+  })
     .then((res) => {
       console.log(res.data);
     })
@@ -32,7 +33,7 @@ export const addToCart = async (
   salePercent,
   image
 ) => {
-  await Axios.post(API_URL + "/addtocart", {
+  await Axios.post(BASE_URL + API_ENDPOINT.CART.ADD_TO_CART, {
     customerID: customerID,
     id: id,
     name: name,
@@ -53,7 +54,7 @@ export const addToCart = async (
 };
 
 export const removeCartItem = async (customerID, productID) => {
-  await Axios.post(API_URL + "/removeone", {
+  await Axios.post(BASE_URL + API_ENDPOINT.CART.REMOVE_ITEM, {
     customerID: customerID,
     productID: productID,
   })
@@ -66,7 +67,7 @@ export const removeCartItem = async (customerID, productID) => {
 };
 
 export const checkout = async (customerID, total) => {
-  await Axios.post(API_URL + "/checkout", {
+  await Axios.post(BASE_URL + API_ENDPOINT.CART.CHECKOUT, {
     customerID: customerID,
     total: total,
   })
@@ -79,7 +80,7 @@ export const checkout = async (customerID, total) => {
 };
 
 export const updateQuantity = async (customerID, productID, quantity) => {
-  await Axios.post(API_URL + "/updatequantity", {
+  await Axios.post(BASE_URL + API_ENDPOINT.CART.UPDATE_QUANTITY, {
     customerID: customerID,
     productID: productID,
     quantity: quantity,
@@ -92,6 +93,7 @@ export const updateQuantity = async (customerID, productID, quantity) => {
     });
 };
 
-export const getHistory = (GET_URL) => {
-  return Axios.get(GET_URL).then((res) => res.data);
+export const getHistory = async (GET_URL) => {
+  const res = await Axios.get(GET_URL);
+  return res.data;
 };
